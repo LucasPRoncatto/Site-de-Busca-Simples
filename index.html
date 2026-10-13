@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wiki de Itens e Receitas do Minecraft</title>
+</head>
+
+<body background="img/terraFundo.jpg" id="background">
+    <header>
+        <h1>Itens do Minecraft</h1>
+        <nav class="navegacao" aria-label="Navegação da página">
+            <a href="#secao-itens">Itens</a>
+            <a href="#secao-receitas">Receitas de fabricação</a>
+        </nav>
+    </header>
+    <main>
+        <section class="secao" id="secao-itens" aria-labelledby="titulo-itens">
+            <h2 class="titulo-secao" id="titulo-itens">Pesquisar itens</h2>
+            <form class="form-pesquisa" id="form-pesquisa-itens">
+                <label for="campo-pesquisa">Digite o nome de um item</label>
+                <div class="linha-pesquisa">
+                    <input type="search" placeholder="Ex.: Diamante" id="campo-pesquisa">
+                    <button type="submit">Pesquisar</button>
+                </div>
+            </form>
+            <div class="resultados-pesquisa" id="resultados-pesquisa" aria-live="polite"></div>
+        </section>
+
+        <section class="secao" id="secao-receitas" aria-labelledby="titulo-receitas">
+            <h2 class="titulo-secao" id="titulo-receitas">Receitas de fabricação</h2>
+            <p class="introducao-secao">Pesquise pelo item que deseja fabricar ou por qualquer ingrediente.</p>
+            <form class="form-pesquisa" id="form-pesquisa-receitas">
+                <label for="campo-receitas">Item ou ingrediente</label>
+                <div class="linha-pesquisa">
+                    <input type="search" placeholder="Ex.: Picareta ou diamante" id="campo-receitas">
+                    <button type="submit">Buscar receitas</button>
+                </div>
+            </form>
+            <div class="resultados-pesquisa" id="resultados-receitas" aria-live="polite">
+                <p class="mensagem-vazia">Exemplos: pesquise “tocha”, “pedregulho” ou “mesa de encantamentos”.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> 2024 @copyright - Itens do Minecraft. Todos os direitos reservados.</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="receitas.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
